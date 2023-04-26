@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans';
+}
+
+body{
+    background: #a64bf4;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px rgba(121, 14, 192,.5);
+}
+#captcha-form{
+    width: 258px;
+}
+
+.captcha-refresh{
+    width: 38px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:#6b6b6b;
+    border: 1px solid #b1b1b1;
+    cursor: pointer;
+    color: #eee;
+}
+ion-icon{
+    position: relative;
+    top: 2px;
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#332902;
+}
+
+.wrapper .input_field {
+    margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+    width: 100%;
+    border: solid 1px grey;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.wrapper textarea {
+    height: 80px;
+    resize: none;
+}
+
+.wrapper .btn input[type="submit"]  {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.wrapper #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.wrapper .Captcha .preview{
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    margin: 1px 0px;
+    border-radius: 8px;
+}
+
+.wrapper .Captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Contact Us</h2>
+        <div id="error_message"></div>
+
+        <form id="myform" autocomplete="off" onsubmit="return validation()">
+            <div class="input_field">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="input_field">
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="input_field">
+                <input type="text" id="phone" placeholder="Phone">
+            </div>
+            <div class="input_field">
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <div class="input_field">
+                <textarea id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="Captcha input_field">
+                <label for="captcha-input">Enter Captcha</label>
+                <div class="preview"></div>
+                <input type="text" id="captcha-form" placeholder="Enter Captcha">
+                <button class="captcha-refresh">
+                    <ion-icon name="refresh-outline"></ion-icon>
+                </button>
+            </div>
+           
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
